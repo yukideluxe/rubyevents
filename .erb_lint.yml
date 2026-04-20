@@ -8,6 +8,10 @@ exclude:
   - log/**/*
   - app/views/profiles/wrapped/**/*
 
+inherit_gem:
+  erblint-github:
+    - config/accessibility.yml
+
 linters:
   ErbSafety:
     enabled: true
@@ -27,7 +31,9 @@ linters:
   Rubocop:
     enabled: true
     rubocop_config:
-      require: standard
+      require:
+        - standard
+        - rubocop-rails-accessibility
       inherit_gem:
         standard: config/base.yml
       Layout/InitialIndentation:
