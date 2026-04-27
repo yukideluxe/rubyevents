@@ -6,10 +6,10 @@
   <% end %>
 
   <% if !event.retreat? || event.talks.any? %>
-    <%= active_link_to event_talks_path(event), class: class_names("tab", {"text-red-500" => !event.talks.any?}), active_class: "tab-active", role: "tab" do %>
+    <%= active_link_to event_talks_path(event), class: class_names("tab", {"text-red-700" => !event.talks.any?}), active_class: "tab-active", role: "tab" do %>
       Talks
       <% unless event.talks.any? %>
-        <%= fa("question-circle", size: :xs, class: "ml-1 fill-red-500") %>
+        <%= fa("question-circle", size: :xs, class: "ml-1 fill-red-700") %>
       <% end %>
     <% end %>
   <% end %>
@@ -29,41 +29,41 @@
   <% end %>
 
   <% if event.conference? || event.schedule.exist? %>
-    <%= active_link_to event_schedules_path(event), class: class_names("tab", {"text-red-500" => !event.schedule.exist?}), active_class: "tab-active", role: "tab" do %>
+    <%= active_link_to event_schedules_path(event), class: class_names("tab", {"text-red-700" => !event.schedule.exist?}), active_class: "tab-active", role: "tab" do %>
       Schedule
       <% unless event.schedule.exist? %>
-        <%= fa("question-circle", size: :xs, class: "ml-1 fill-red-500") %>
+        <%= fa("question-circle", size: :xs, class: "ml-1 fill-red-700") %>
       <% end %>
     <% end %>
   <% end %>
 
   <% if event.conference? || event.venue.exist? %>
-    <%= active_link_to event_venue_path(event), class: class_names("tab", {"text-red-500" => !event.venue.exist?}), active_class: "tab-active", role: "tab" do %>
+    <%= active_link_to event_venue_path(event), class: class_names("tab", {"text-red-700" => !event.venue.exist?}), active_class: "tab-active", role: "tab" do %>
       Venue
       <% unless event.venue.exist? %>
-        <%= fa("question-circle", size: :xs, class: "ml-1 fill-red-500") %>
+        <%= fa("question-circle", size: :xs, class: "ml-1 fill-red-700") %>
       <% end %>
     <% end %>
   <% end %>
 
   <% if event.conference? || event.sponsors.exists? %>
-    <%= active_link_to event_sponsors_path(event), class: class_names("tab", {"text-red-500" => !event.sponsors.any?}), active_class: "tab-active", role: "tab" do %>
+    <%= active_link_to event_sponsors_path(event), class: class_names("tab", {"text-red-700" => !event.sponsors.any?}), active_class: "tab-active", role: "tab" do %>
       Sponsors
       <% unless event.sponsors.any? %>
-        <%= fa("question-circle", size: :xs, class: "ml-1 fill-red-500") %>
+        <%= fa("question-circle", size: :xs, class: "ml-1 fill-red-700") %>
       <% end %>
     <% end %>
   <% end %>
 
   <% if event.conference? || event.cfps.any? %>
-    <%= active_link_to event_cfp_index_path(event), class: class_names("tab", {"text-red-500" => event.cfps.none?}), active_class: "tab-active", role: "tab" do %>
+    <%= active_link_to event_cfp_index_path(event), class: class_names("tab", {"text-red-700" => event.cfps.none?}), active_class: "tab-active", role: "tab" do %>
       <% if event.cfps.open.any? %>
         CFP <span class="text-green-600 ml-1"> (open)</span>
       <% else %>
         CFP
       <% end %>
       <% if event.cfps.none? %>
-        <%= fa("question-circle", size: :xs, class: "ml-1 fill-red-500") %>
+        <%= fa("question-circle", size: :xs, class: "ml-1 fill-red-700") %>
       <% end %>
     <% end %>
   <% end %>
