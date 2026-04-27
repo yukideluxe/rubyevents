@@ -107,6 +107,29 @@ lightning_talk:
   date: "2024-08-15"
   static_id: lightning-talk-title
 
+meta_talk:
+  title: Conference Day One
+  description: Full recording of conference day one
+  slug: conference-day-one
+  kind: "talk"
+  meta_talk: true
+  video_provider: youtube
+  video_id: dQw4w9WgXcQ
+  event: rails_world_2023
+  date: "2023-10-05"
+  static_id: conference-day-one-meta
+
+meta_talk_child_one:
+  title: Opening Keynote
+  description: The opening keynote talk
+  slug: opening-keynote
+  kind: "talk"
+  video_provider: parent
+  parent_talk: meta_talk
+  event: rails_world_2023
+  date: "2023-10-05"
+  static_id: opening-keynote-child
+
 brightonruby_2024_one:
   title: Getting to Two Million Users as a One Woman Dev Team
   description: talk descritpion 2

@@ -1,4 +1,5 @@
 require "test_helper"
+require "axe/matchers/be_axe_clean"
 
 Capybara.register_driver :headless_chrome do |app|
   options = ::Selenium::WebDriver::Chrome::Options.new
@@ -15,6 +16,13 @@ Capybara.javascript_driver = :headless_chrome
 
 class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
   driven_by :selenium, using: :headless_chrome, screen_size: [1400, 1400]
+
+  # Run axe-core accessibility audit on the current page
+  def assert_accessible
+    matcher = Axe::Matchers.be_axe_clean
+    audit = matcher.audit(page)
+    assert audit.passed?, audit.failure_message
+  end
 
   def sign_in_as(user)
     visit new_session_url

@@ -280,4 +280,7 @@ group :test do
   gem "selenium-webdriver"
   gem "vcr", "~> 6.1"
   gem "webmock"
+
+  # Accessibility testing with axe-core
+  gem "axe-core-api"
 end
