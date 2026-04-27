@@ -36,6 +36,7 @@ class Ui::AvatarComponent < ApplicationComponent
   option :kind, Dry::Types["coercible.symbol"].enum(*KIND_MAPPING.keys), default: proc { :primary }
   option :hover_card, type: Dry::Types["strict.bool"], default: proc { false }
   option :linked, type: Dry::Types["strict.bool"], default: proc { false }
+  option :image_alt, Dry::Types["coercible.string"].optional, default: proc { nil }
 
   def show_hover_card?
     hover_card && avatarable.is_a?(User)
