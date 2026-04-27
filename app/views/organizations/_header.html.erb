@@ -11,7 +11,7 @@
     <% end %>
   ">
   <% if organization.organization_image_for("banner.webp") %>
-    <%= image_tag image_path(organization.banner_image_path), class: "w-full md:container object-cover" %>
+    <%= image_tag image_path(organization.banner_image_path), alt: organization.name, class: "w-full md:container object-cover" %>
   <% end %>
 </div>
 
@@ -48,7 +48,7 @@
           <h1 class="text-black font-bold"><%= title organization.name %></h1>
         </div>
         <% if organization.main_location.present? %>
-          <h3 class="text-[#636B74]"><%= organization.main_location %></h3>
+          <h2 class="text-[#636B74]"><%= organization.main_location %></h2>
         <% end %>
         <% if organization.website.present? %>
           <%= external_link_to organization.website.gsub(%r{^https?://}, "").gsub(%r{/$}, ""), organization.website %>

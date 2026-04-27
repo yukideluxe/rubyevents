@@ -50,13 +50,12 @@
 
     <div class="flex flex-col w-full divide-y md:gap-1">
       <div class="flex flex-wrap justify-between w-full divide-y">
-        <div class="py-4 text-xl font-bold">
+        <h1 class="py-4 text-xl font-bold">
           <span><%= talk.title %></span>
           <% if talk.original_title.present? %>
             <div class="mb-2 text-xs text-gray-500">Original title (<%= talk.language %>): <%= talk.original_title %></div>
           <% end %>
-
-        </div>
+        </h1>
 
         <div class="flex order-last gap-1 py-3 overflow-x-scroll overflow-y-visible text-xs grow lg:divide-y-0 xl:justify-end lg:overflow-x-hidden xl:order-none">
           <% if Current.user&.admin? %>
@@ -204,7 +203,7 @@
     <% if (talk.parent_talk.present? || talk.meta_talk?) && talk.video_provider != "children" %>
       <% parent_talk = talk.parent_talk || talk %>
 
-      <h3 class="my-3 font-bold text-md">Sections in this recording</h3>
+      <h2 class="my-3 font-bold text-md">Sections in this recording</h2>
 
       <%= render partial: "talks/sections", locals: {talk: parent_talk} %>
 
