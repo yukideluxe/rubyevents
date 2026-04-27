@@ -67,7 +67,7 @@
           </div>
 
           <div class="card-actions justify-end mt-4">
-            <%= link_to "Read more →", announcement_path(announcement, **permitted_params), class: "text-primary hover:underline" %>
+            <%= link_to "Read more →", announcement_path(announcement, **permitted_params), class: "text-primary hover:underline", aria: {label: "Read more about #{announcement.title}"} %>
           </div>
         </div>
       </article>

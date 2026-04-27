@@ -1,4 +1,4 @@
-<%= ui_modal position: :top, size: :full, close_button: false, data: {action: "keydown.meta+k@window->modal#open spotlight@window->modal#open"}, class: "spotlight" do %>
+<%= ui_modal position: :top, size: :full, close_button: false, data: {action: "keydown.meta+k@window->modal#open spotlight@window->modal#open"}, class: "spotlight", aria: {label: "Search"} do %>
   <div
     id="spotlight-search"
     class="flex flex-col h-full"

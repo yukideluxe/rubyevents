@@ -81,11 +81,11 @@
         <% end %>
       </div>
 
-      <div class="stories-close" data-action="click->wrapped-stories#toggleMode">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <button class="stories-close" data-action="click->wrapped-stories#toggleMode" aria-label="Close stories view">
+        <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
-      </div>
+      </button>
 
       <div class="stories-nav stories-nav-left" data-action="click->wrapped-stories#previous"></div>
       <div class="stories-nav stories-nav-right" data-action="click->wrapped-stories#next"></div>

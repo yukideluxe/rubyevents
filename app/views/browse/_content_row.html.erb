@@ -25,7 +25,8 @@
         <button
           class="hidden lg:flex absolute -left-4 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-all opacity-0 group-hover/row:opacity-100 disabled:opacity-0"
           data-content-row-target="prevButton"
-          data-action="click->content-row#scrollLeft">
+          data-action="click->content-row#scrollLeft"
+          aria-label="Scroll left">
 
           <%= fa("chevron-left", size: :md, class: "text-gray-700") %>
         </button>
@@ -50,7 +51,8 @@
         <button
           class="hidden lg:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-all opacity-0 group-hover/row:opacity-100 disabled:opacity-0"
           data-content-row-target="nextButton"
-          data-action="click->content-row#scrollRight">
+          data-action="click->content-row#scrollRight"
+          aria-label="Scroll right">
           <%= fa("chevron-right", size: :md, class: "text-gray-700") %>
         </button>
 
