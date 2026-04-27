@@ -3,10 +3,10 @@
 <%= turbo_frame_tag dom_id(@organization), data: {turbo_action: "advance", turbo_frame: "_top"} do %>
   <div class="container py-8">
     <% if @events_by_year.any? || @involved_events.any? %>
-      <div role="tablist" class="tabs tabs-bordered mt-6">
-        <input type="radio" name="organization_tabs" role="tab" class="tab px-6" aria-label="Supported Events (<%= @events.size %>)" <% if @events.size > 0 %> checked <% end %>>
+      <div class="tabs tabs-bordered mt-6">
+        <input type="radio" name="organization_tabs" class="tab px-6" aria-label="Supported Events (<%= @events.size %>)" <% if @events.size > 0 %> checked <% end %>>
 
-        <div role="tabpanel" class="tab-content mt-6">
+        <div class="tab-content mt-6">
           <% @events_by_year.each do |year, events| %>
             <div class="mb-12">
               <h2 class="text-2xl font-bold text-gray-900 mb-6">
@@ -22,9 +22,9 @@
         </div>
 
         <% if @involvements_by_role.any? %>
-          <input type="radio" name="organization_tabs" role="tab" class="tab px-6" aria-label="Involvements (<%= @involved_events.size %>)" <% if @events.size <= 0 && @involvements_by_role.any? %> checked <% end %>>
+          <input type="radio" name="organization_tabs" class="tab px-6" aria-label="Involvements (<%= @involved_events.size %>)" <% if @events.size <= 0 && @involvements_by_role.any? %> checked <% end %>>
 
-          <div role="tabpanel" class="tab-content mt-6">
+          <div class="tab-content mt-6">
             <% @involvements_by_role.each do |role, involvements| %>
               <div class="mb-12">
                 <h3 class="text-xl font-bold text-gray-900 mb-6"><%= role %></h3>
@@ -39,9 +39,9 @@
         <% end %>
 
         <% if @countries_with_events.any? %>
-          <input type="radio" name="organization_tabs" role="tab" class="tab px-6" aria-label="Map (<%= @countries_with_events.size %>)">
+          <input type="radio" name="organization_tabs" class="tab px-6" aria-label="Map (<%= @countries_with_events.size %>)">
 
-          <div role="tabpanel" class="tab-content mt-6">
+          <div class="tab-content mt-6">
             <div class="space-y-8">
               <% @countries_with_events.group_by { |country, _| country.continent_name }.sort_by(&:first).each do |continent, countries_group| %>
                 <div>
@@ -57,9 +57,9 @@
           </div>
         <% end %>
 
-        <input type="radio" name="organization_tabs" role="tab" class="tab px-6" aria-label="Statistics">
+        <input type="radio" name="organization_tabs" class="tab px-6" aria-label="Statistics">
 
-        <div role="tabpanel" class="tab-content mt-6">
+        <div class="tab-content mt-6">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="stats stats-vertical bg-white border">
               <div class="stat">

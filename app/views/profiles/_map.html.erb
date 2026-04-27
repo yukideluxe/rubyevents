@@ -1,7 +1,7 @@
 <% if countries_with_events.any? %>
-  <div role="tablist" class="tabs tabs-boxed bg-base-100 mt-2">
-    <input type="radio" name="map_view" role="tab" class="tab px-6 !rounded-lg" aria-label="Map" checked>
-    <div role="tabpanel" class="tab-content mt-6">
+  <div class="tabs tabs-boxed bg-base-100 mt-2">
+    <input type="radio" name="map_view" class="tab px-6 !rounded-lg" aria-label="Map" checked>
+    <div class="tab-content mt-6">
       <div
         id="profile-map"
         class="w-full h-[600px] md:h-[800px] rounded-lg"
@@ -9,8 +9,8 @@
         data-map-markers-value="<%= event_map_markers.to_json %>"></div>
     </div>
 
-    <input type="radio" name="map_view" role="tab" class="tab px-6 !rounded-lg" aria-label="List">
-    <div role="tabpanel" class="tab-content mt-6">
+    <input type="radio" name="map_view" class="tab px-6 !rounded-lg" aria-label="List">
+    <div class="tab-content mt-6">
       <div class="space-y-8">
         <% countries_with_events.group_by { |country, _| country.continent_name }.sort_by(&:first).each do |continent, countries_group| %>
           <div>

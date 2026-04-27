@@ -11,6 +11,11 @@ export default class extends Controller {
       this.splide = new Splide(this.element, this.splideOptions)
       this.splide.mount()
 
+      // Fix ARIA: Splide sets role="tabpanel" on <li> slides which is not valid
+      this.element.querySelectorAll('.splide__slide').forEach(slide => {
+        slide.removeAttribute('role')
+      })
+
       if (this.#shouldUpdateNavbar()) {
         this.splide.on('moved', () => {
           this.#updateNavbarColors()
@@ -63,7 +68,8 @@ export default class extends Controller {
       rewind: true,
       perPage: 1,
       autoplay: true,
-      speed: 0
+      speed: 0,
+      role: 'group'
     }
   }
 
