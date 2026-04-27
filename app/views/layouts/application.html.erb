@@ -36,13 +36,13 @@
   </head>
 
   <body data-controller="preserve-scroll" class="<%= yield(:body_class) %>">
-    <div class="hotwire-native:hidden">
+    <header class="hotwire-native:hidden">
       <%= render "shared/navbar" %>
-    </div>
+    </header>
 
-    <div class="min-h-screen">
+    <main class="min-h-screen">
       <%= yield %>
-    </div>
+    </main>
 
     <%= render "shared/footer" %>
     <%= render "shared/breakpoints" %>

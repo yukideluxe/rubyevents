@@ -1,4 +1,4 @@
-<main class="container">
+<div class="container">
   <% playlists = Static::Event.where.not(featured_background: nil) %>
   <% events = Event.where(slug: playlists.map(&:slug)).order(date: :desc) %>
 
@@ -7,4 +7,4 @@
       <%= render partial: "events/featured", locals: {event: event} %>
     <% end %>
   </div>
-</main>
+</div>
