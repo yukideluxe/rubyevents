@@ -4,7 +4,8 @@
   <% layers.each do |layer| %>
     <% display_label = (use_emoji && layer[:emoji].present?) ? layer[:emoji] : layer[:label] %>
 
-    <label class="btn btn-sm <%= layer[:visible] ? "btn-primary text-primary-content" : "btn-ghost" %>" title="<%= layer[:label] %>">
+    <label class="btn btn-sm <%= layer[:visible] ? "btn-primary text-primary-content" : "btn-ghost" %>"
+      <%= "aria-label=#{layer[:label]}" if use_emoji && layer[:emoji].present? %>>
       <% if selection == "radio" %>
         <input
           type="radio" name="map_layer" class="hidden"

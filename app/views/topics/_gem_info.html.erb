@@ -17,21 +17,24 @@
 
     <div class="flex flex-wrap items-center gap-4 text-sm text-gray-600">
       <% if topic_gem.downloads.present? %>
-        <div class="flex items-center gap-1.5" title="Total downloads">
+        <div class="flex items-center gap-1.5">
+          <span class="sr-only">Total downloads</span>
           <%= fa("download", size: :xs) %>
           <span><%= number_to_human(topic_gem.downloads) %> downloads</span>
         </div>
       <% end %>
 
       <% if topic_gem.version_created_at.present? %>
-        <div class="flex items-center gap-1.5" title="Latest release">
+        <div class="flex items-center gap-1.5">
+          <span class="sr-only">Latest release</span>
           <%= fa("calendar", size: :xs) %>
           <span>Released <%= time_ago_in_words(topic_gem.version_created_at) %> ago</span>
         </div>
       <% end %>
 
       <% if topic_gem.license.present? %>
-        <div class="flex items-center gap-1.5" title="License">
+        <div class="flex items-center gap-1.5">
+          <span class="sr-only">License</span>
           <%= fa("scale-balanced", size: :xs) %>
           <span><%= topic_gem.license %></span>
         </div>
