@@ -9,7 +9,7 @@
         </div>
 
         <div class="collapse collapse-arrow bg-base-300">
-          <input type="checkbox">
+          <input type="checkbox" aria-label="Show <%= todo_type[:count] %> <%= "occurrence".pluralize(todo_type[:count]) %>">
           <div class="collapse-title py-2 min-h-0 font-medium">
             Show <%= todo_type[:count] %> <%= "occurrence".pluralize(todo_type[:count]) %>
           </div>

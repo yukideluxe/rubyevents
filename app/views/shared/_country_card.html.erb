@@ -19,7 +19,7 @@
       <% end %>
       <% if events.size > 3 %>
         <div class="collapse collapse-arrow">
-          <input type="checkbox" class="collapse-checkbox">
+          <input type="checkbox" class="collapse-checkbox" aria-label="Show all events in <%= country.name %>">
           <div class="collapse-title text-sm text-gray-500 italic p-0 min-h-0">
             and <%= events.size - 3 %> more...
           </div>
