@@ -36,11 +36,15 @@
   </head>
 
   <body data-controller="preserve-scroll" class="<%= yield(:body_class) %>">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-2 focus:left-2 focus:px-4 focus:py-2 focus:bg-white focus:text-primary focus:rounded focus:shadow-lg focus:font-semibold">
+      Skip to main content
+    </a>
+
     <header class="hotwire-native:hidden">
       <%= render "shared/navbar" %>
     </header>
 
-    <main class="min-h-screen">
+    <main id="main-content" class="min-h-screen">
       <%= yield %>
     </main>
 
