@@ -9,8 +9,8 @@ start_date: "2011-04-21"
 end_date: "2011-04-22"
 year: 2011
 website: "https://web.archive.org/web/20110323065201/http://reddirtrubyconf.com"
-banner_background: "#EE4538"
-featured_background: "#EE4538"
+banner_background: "#AE382F"
+featured_background: "#AE382F"
 featured_color: "#FFFFFF"
 coordinates:
   latitude: 35.4688692

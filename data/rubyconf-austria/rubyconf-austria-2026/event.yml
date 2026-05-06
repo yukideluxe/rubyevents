@@ -8,8 +8,8 @@ description: |-
 start_date: "2026-05-29"
 end_date: "2026-05-31"
 website: "https://rubyconf.at"
-banner_background: "#E20818"
-featured_background: "#E20818"
+banner_background: "#F6E6E7"
+featured_background: "#F6E6E7"
 featured_color: "#000000"
 coordinates:
   latitude: 48.2200194

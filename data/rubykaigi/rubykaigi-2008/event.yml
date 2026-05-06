@@ -8,8 +8,8 @@ start_date: "2008-06-20"
 end_date: "2008-06-22"
 year: 2008
 website: "https://rubykaigi.org/2008/"
-banner_background: "#FF2000"
-featured_background: "#FF2000"
+banner_background: "#A44437"
+featured_background: "#A44437"
 featured_color: "#FFFFFF"
 coordinates:
   latitude: 36.0835255

@@ -15,8 +15,8 @@ end_date: "2022-12-10"
 year: 2022
 channel_id: "UCwIhYV_sPTzvjk6B6EUnf1g"
 website: "https://rubyconfth.com/past/2022/"
-banner_background: "#F92849"
-featured_background: "#F92849"
+banner_background: "#B13145"
+featured_background: "#B13145"
 featured_color: "#FFFFFF"
 coordinates:
   latitude: 13.7588878

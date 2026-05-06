@@ -7,8 +7,8 @@ description: ""
 start_date: "2018-06-30"
 end_date: "2018-06-30"
 website: "https://matsue.rubyist.net/matrk09/"
-banner_background: "#eb1d15"
-featured_background: "#eb1d15"
+banner_background: "#AA3C38"
+featured_background: "#AA3C38"
 featured_color: "#ffffff"
 coordinates:
   latitude: 35.4639783

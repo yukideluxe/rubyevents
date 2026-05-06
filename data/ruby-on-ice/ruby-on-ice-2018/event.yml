@@ -10,8 +10,8 @@ end_date: "2018-02-28"
 year: 2018
 channel_id: "UCXNhwlbzt-6LoOzMt4wrF0A"
 website: "https://2018.rubyonice.com/"
-banner_background: "#6EB5CF"
-featured_background: "#6EB5CF"
+banner_background: "#1F6A86"
+featured_background: "#1F6A86"
 featured_color: "#FFFFFF"
 coordinates:
   latitude: 47.7130234

@@ -8,7 +8,7 @@ description: |-
 website: "https://chicagoruby.org"
 banner_background: "#FFFFFF"
 featured_background: "#FFFFFF"
-featured_color: "#D0232B"
+featured_color: "#9C373C"
 coordinates:
   latitude: 41.88325
   longitude: -87.6323879

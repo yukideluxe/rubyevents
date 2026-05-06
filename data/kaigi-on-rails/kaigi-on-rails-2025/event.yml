@@ -14,7 +14,7 @@ mastodon: "https://ruby.social/@kaigionrails"
 venue: "＠JP TOWER Hall & Conference"
 banner_background: "#292321"
 featured_background: "#292321"
-featured_color: "#EE633B"
+featured_color: "#EEC9BF"
 coordinates:
   latitude: 35.6799708
   longitude: 139.7645914

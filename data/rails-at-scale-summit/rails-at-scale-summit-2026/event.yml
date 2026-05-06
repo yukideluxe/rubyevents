@@ -10,7 +10,7 @@ end_date: "2026-09-22"
 website: "https://rubyonrails.org/world/2026/rails-at-scale"
 banner_background: "#000000"
 featured_background: "#000000"
-featured_color: "#d30001"
+featured_color: "#FFFFFF"
 coordinates:
   latitude: 30.267153
   longitude: -97.7430608

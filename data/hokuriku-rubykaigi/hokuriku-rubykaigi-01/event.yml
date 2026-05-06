@@ -9,7 +9,7 @@ start_date: "2025-12-06"
 end_date: "2025-12-06"
 website: "https://regional.rubykaigi.org/hokuriku01/"
 banner_background: "#FFFFFF"
-featured_background: "#D3301E"
+featured_background: "#A3453A"
 featured_color: "#FFFFFF"
 coordinates:
   latitude: 36.5488311

@@ -10,7 +10,7 @@ website: "https://rubyforgood.org/events"
 twitter: "rubyforgood"
 banner_background: "#FFFFFF"
 featured_background: "#FFFFFF"
-featured_color: "#008080"
+featured_color: "#375B5C"
 coordinates:
   latitude: 39.5075257
   longitude: -77.7904127

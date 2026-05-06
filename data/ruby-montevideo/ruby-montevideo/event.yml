@@ -14,7 +14,7 @@ banner_background: |-
     #2E2E2E 19%, #2E2E2E 20%,
     #3967D1 20%
   )
-featured_background: "#3967D1"
+featured_background: "#395FB6"
 featured_color: "#FFFFFF"
 coordinates:
   latitude: -34.9055016

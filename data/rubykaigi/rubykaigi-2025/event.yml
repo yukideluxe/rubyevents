@@ -11,8 +11,8 @@ end_date: "2025-04-18"
 year: 2025
 channel_id: "UCnl2p1jpQo4ITeFq4yqmVuA"
 website: "https://rubykaigi.org/2025/"
-banner_background: "#EB4102"
-featured_background: "#EB4102"
+banner_background: "#955037"
+featured_background: "#955037"
 featured_color: "#FFFFFF"
 coordinates:
   latitude: 33.852
